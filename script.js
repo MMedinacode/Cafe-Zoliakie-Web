@@ -84,9 +84,9 @@ function updateSchedule(){
 
   let open = false;
   if(day >= 1 && day <= 5){
-    open = hour >= 9.5 && hour < 19;
+    open = hour >= 9 && hour < 20;
   } else if(day === 6){
-    open = hour >= 9.5 && hour < 14;
+    open = hour >= 9 && hour < 19;
   }
 
   const statusEl = document.getElementById('openStatus');
