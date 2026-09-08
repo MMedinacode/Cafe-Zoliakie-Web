@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zöliakie Kaffee — Cafetería 100% Gluten Free en Providencia</title>
+<meta name="description" content="Zöliakie Kaffee, cafetería 100% libre de gluten en Av. Providencia 2546. Empanadas, tortas, sándwiches y hamburguesas aptas para celíacos, sin riesgo de contaminación cruzada.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Pantalla de carga breve: se oculta sola apenas el DOM está listo (script.js) -->
+<div id="loader" class="loader">
+  <div class="loader-badge">
+    <span class="loader-cup">☕</span>
+    <span class="loader-text">Zöliakie Kaffee</span>
+  </div>
+</div>
+
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#inicio" class="brand" data-tab-link="inicio">
+      <span class="brand-badge">ZK</span>
+      <span class="brand-name">Zöliakie <em>Kaffee</em></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <button class="nav-link active" data-tab-link="inicio">Inicio</button>
+      <button class="nav-link" data-tab-link="nosotros">Nosotros</button>
+      <button class="nav-link" data-tab-link="carta">Carta</button>
+      <button class="nav-link" data-tab-link="resenas">Reseñas</button>
+      <button class="nav-link" data-tab-link="visitanos">Visítanos</button>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main>
+
+  <!-- ================= INICIO ================= -->
+  <section class="tab-section active" id="inicio" data-tab="inicio">
+
+    <div class="hero">
+      <div class="hero-bg">
+        <!-- TEMPORAL: foto de stock (Unsplash) de café/pastelería, marcador de posición
+             hasta que el dueño deje fotos reales del local en la carpeta fotos/ -->
+        <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=1600&q=70" alt="Pastelería artesanal sin gluten (foto referencial temporal)">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content reveal">
+        <span class="eyebrow">Cafetería · Providencia</span>
+        <h1>100% Gluten Free,<br>100% sabor.</h1>
+        <p class="hero-sub">Calidad y servicio incomparables para quienes viven sin gluten — sin miedo a la contaminación cruzada, en un ambiente pequeño y hogareño.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" data-tab-link="carta">Ver la carta</button>
+          <button class="btn btn-outline" data-tab-link="visitanos">Cómo llegar</button>
+        </div>
+        <div class="hero-rating">
+          <span class="stars">★★★★★</span>
+          <strong>4.7</strong>
+          <span>(389 opiniones en Google)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="trust-bar reveal">
+      <div class="trust-item">
+        <span class="trust-icon">🌾✕</span>
+        <span>100% Sin Gluten</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🛡️</span>
+        <span>Sin contaminación cruzada</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🏠</span>
+        <span>Ambiente familiar</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">⭐</span>
+        <span>4.7★ · 389 reseñas</span>
+      </div>
+    </div>
+
+    <section class="section-inner">
+      <div class="highlight-grid">
+        <div class="highlight-card reveal">
+          <h3>Pensado para celíacos</h3>
+          <p>El local trabaja 100% libre de gluten — no hay riesgo de contaminación cruzada, algo que nuestros propios clientes celíacos destacan como lo más valioso.</p>
+        </div>
+        <div class="highlight-card reveal">
+          <h3>Dulce y salado</h3>
+          <p>Desde empanadas y completos hasta tortas, alfajores y hamburguesas — la carta clásica chilena, recreada 100% sin gluten.</p>
+        </div>
+        <div class="highlight-card reveal">
+          <h3>Trato cercano</h3>
+          <p>Un local pequeño y hogareño donde el servicio atento hacia quienes tienen restricciones alimentarias es la razón número uno por la que la gente vuelve.</p>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- ================= NOSOTROS ================= -->
+  <section class="tab-section" id="nosotros" data-tab="nosotros">
+    <section class="section-inner narrow">
+      <span class="eyebrow">Nuestra historia</span>
+      <h2 class="reveal">Una de las primeras cafeterías 100% libres de gluten de Santiago</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>Zöliakie Kaffee nació en Providencia con una idea simple: que las personas celíacas y con intolerancia al gluten puedan sentarse a comer tranquilas, sin tener que preguntar dos veces si algo "tiene trazas". Fue una de las primeras cafeterías de la ciudad en declararse 100% Gluten Free.</p>
+          <p>El local es pequeño y hogareño — así lo describen quienes llegan por primera vez — y ese tamaño acotado es justamente lo que permite un control estricto de la cocina para evitar la contaminación cruzada, el mayor temor de cualquier persona celíaca al comer fuera de casa.</p>
+          <p>La carta mezcla clásicos chilenos (empanadas, completos, sándwiches) con pastelería propia — tortas, alfajores y galletas — todo preparado sin gluten, para que comer algo rico deje de ser sinónimo de restricción.</p>
+        </div>
+        <div class="about-photo reveal">
+          <!-- TEMPORAL: foto de stock, reemplazar por foto real del local/mesón -->
+          <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=900&q=70" alt="Interior acogedor de cafetería (foto referencial temporal)">
+        </div>
+      </div>
+
+      <div class="quote-block reveal">
+        <p>"Siempre estoy buscando lugares que sean 100% Sin Gluten, esta cafetería es uno de ellos. La mejor atención y la comida que mi madre más ha disfrutado, el hecho de poder comer sin miedo a la contaminación cruzada es impagable."</p>
+        <span>— María Paz Mardones, reseña real en Google Maps</span>
+      </div>
+    </section>
+  </section>
+
+  <!-- ================= CARTA ================= -->
+  <section class="tab-section" id="carta" data-tab="carta">
+    <section class="section-inner">
+      <span class="eyebrow">Todo sin gluten</span>
+      <h2 class="reveal">Nuestra Carta</h2>
+      <p class="section-lead reveal">Zöliakie Kaffee aún no publica una lista de precios oficial en sus canales — los siguientes son los productos reales que más mencionan sus clientes en reseñas de Google. Precios sujetos a consulta directa en el local o por Instagram.</p>
+
+      <div class="menu-note reveal">
+        <strong>Referencia de precio por persona</strong> (dato agregado de Google Maps, no por producto): consumo en el local ronda los $15.000–$20.000; pedidos para llevar, entre $5.000–$10.000.
+      </div>
+
+      <div class="menu-categories">
+
+        <div class="menu-cat reveal">
+          <h3>Salado</h3>
+          <div class="menu-grid">
+            <div class="menu-item"><span>Empanadas sin gluten</span><span class="price">Consultar</span></div>
+            <div class="menu-item"><span>Completos / hot dogs</span><span class="price">Consultar</span></div>
+            <div class="menu-item"><span>Hamburguesas</span><span class="price">Consultar</span></div>
+            <div class="menu-item"><span>Sándwiches</span><span class="price">Consultar</span></div>
+            <div class="menu-item"><span>Quiche</span><span class="price">Consultar</span></div>
+          </div>
+        </div>
+
+        <div class="menu-cat reveal">
+          <h3>Dulce &amp; Pastelería</h3>
+          <div class="menu-grid">
+            <div class="menu-item"><span>Torta panqueque naranja (sin azúcar, con alulosa)</span><span class="price">Consultar</span></div>
+            <div class="menu-item"><span>Torta mil hojas</span><span class="price">Consultar</span></div>
+            <div class="menu-item"><span>Alfajores</span><span class="price">Consultar</span></div>
+            <div class="menu-item"><span>Chilenitos</span><span class="price">Consultar</span></div>
+            <div class="menu-item"><span>Snickers (barra tipo golosina)</span><span class="price">Consultar</span></div>
+          </div>
+        </div>
+
+        <div class="menu-cat reveal">
+          <h3>Café</h3>
+          <div class="menu-grid">
+            <div class="menu-item"><span>Café</span><span class="price">Consultar</span></div>
+            <div class="menu-item"><span>Bebidas calientes</span><span class="price">Consultar</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="menu-tags-title reveal">Lo que más mencionan las reseñas de Google:</p>
+      <div class="menu-tags reveal">
+        <span>#celíacos (48)</span>
+        <span>#productos (24)</span>
+        <span>#tortas (24)</span>
+        <span>#empanadas (19)</span>
+        <span>#dulces (15)</span>
+        <span>#hamburguesas (11)</span>
+        <span>#completos (9)</span>
+        <span>#sin contaminación cruzada (6)</span>
+      </div>
+    </section>
+  </section>
+
+  <!-- ================= RESEÑAS ================= -->
+  <section class="tab-section" id="resenas" data-tab="resenas">
+    <section class="section-inner">
+      <span class="eyebrow">Lo que dicen en Google</span>
+      <h2 class="reveal">Reseñas reales</h2>
+      <div class="rating-summary reveal">
+        <span class="rating-big">4.7</span>
+        <div>
+          <span class="stars">★★★★★</span>
+          <p>389 opiniones en Google Maps</p>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <div class="review-head">
+            <span class="review-avatar">MP</span>
+            <div>
+              <strong>María Paz Mardones</strong>
+              <span>Local Guide · 35 opiniones</span>
+            </div>
+          </div>
+          <span class="stars">★★★★★</span>
+          <p>"Siempre estoy buscando lugares que sean 100% Sin Gluten, esta cafetería es uno de ellos. La mejor atención y la comida que mi madre más ha disfrutado, el hecho de poder comer sin miedo a la contaminación cruzada es impagable. Un ambiente pequeño, hogareño y con muy buenas vibras. Si eres celíac@ al nivel máximo, este local es para ti, para que comas tranquilo, rico y barato."</p>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-head">
+            <span class="review-avatar">CD</span>
+            <div>
+              <strong>Ceci Dorado</strong>
+              <span>Local Guide · 93 opiniones</span>
+            </div>
+          </div>
+          <span class="stars">★★★★★</span>
+          <p>"Compré para llevar un snicker y es realmente excelente. Volveré para probar salado. Atienden muy bien y es ideal para quienes somos celiacos."</p>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-head">
+            <span class="review-avatar">PV</span>
+            <div>
+              <strong>P V</strong>
+              <span>Local Guide · 16 opiniones</span>
+            </div>
+          </div>
+          <span class="stars">★★★★★</span>
+          <p>"Compré torta panqueque naranja sin azúcar, con alulosa, estaba deliciosaaaa (soy super mañosa pero me encantó) y el señor que atiende es muy amable y simpático."</p>
+        </div>
+      </div>
+
+      <div class="review-cta reveal">
+        <p>¿Ya nos visitaste?</p>
+        <a class="btn btn-primary" href="https://search.google.com/local/writereview?placeid=0x9662cf6a284af351:0x7eb64a45106f222b" target="_blank" rel="noopener">Escribe tu reseña en Google</a>
+      </div>
+    </section>
+  </section>
+
+  <!-- ================= VISÍTANOS ================= -->
+  <section class="tab-section" id="visitanos" data-tab="visitanos">
+    <section class="section-inner">
+      <span class="eyebrow">Encuéntranos</span>
+      <h2 class="reveal">Visítanos</h2>
+
+      <div class="visit-grid">
+        <div class="visit-info reveal">
+
+          <div class="info-block">
+            <h4>Dirección</h4>
+            <p>Av. Providencia 2546, Providencia<br>Entre Luis Thayer Ojeda y Holanda — a pasos del Metro Tobalaba</p>
+          </div>
+
+          <div class="info-block">
+            <h4>Horario</h4>
+            <ul class="hours-list" id="hoursList">
+              <li data-day="1"><span>Lunes</span><span>9:30 – 19:00</span></li>
+              <li data-day="2"><span>Martes</span><span>9:30 – 19:00</span></li>
+              <li data-day="3"><span>Miércoles</span><span>9:30 – 19:00</span></li>
+              <li data-day="4"><span>Jueves</span><span>9:30 – 19:00</span></li>
+              <li data-day="5"><span>Viernes</span><span>9:30 – 19:00</span></li>
+              <li data-day="6"><span>Sábado</span><span>9:30 – 14:00</span></li>
+              <li data-day="0"><span>Domingo</span><span>Cerrado</span></li>
+            </ul>
+            <p class="open-status" id="openStatus"></p>
+          </div>
+
+          <div class="info-block">
+            <h4>Contacto</h4>
+            <!-- Google Maps no registra teléfono ni WhatsApp para este local (verificado en vivo).
+                 No se inventa ningún número: el único canal de contacto confirmado es Instagram. -->
+            <p>No hay teléfono ni WhatsApp registrado por el negocio — el canal de contacto confirmado es Instagram.</p>
+            <a class="btn btn-outline" href="https://www.instagram.com/zoliakiekaffee/" target="_blank" rel="noopener">@zoliakiekaffee en Instagram</a>
+          </div>
+
+          <div class="route-buttons">
+            <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Cafe+Zoliakie+Gluten+Free,Av.+Providencia+2546,Providencia&destination_place_id=0x9662cf6a284af351:0x7eb64a45106f222b" target="_blank" rel="noopener">Cómo llegar (Maps)</a>
+            <a class="btn btn-outline" href="https://waze.com/ul?q=Av.%20Providencia%202546%2C%20Providencia&navigate=yes" target="_blank" rel="noopener">Ir con Waze</a>
+          </div>
+        </div>
+
+        <div class="visit-map reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2159.336212655262!2d-70.60524711869321!3d-33.4192878071295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf6a284af351%3A0x7eb64a45106f222b!2sCafe%20Zoliakie%20Gluten%20Free!5e0!3m2!1ses-419!2scl!4v1788895260332!5m2!1ses-419!2scl"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="Ubicación de Zöliakie Kaffee en Google Maps"></iframe>
+        </div>
+      </div>
+    </section>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="brand footer-brand">
+      <span class="brand-badge">ZK</span>
+      <span class="brand-name">Zöliakie <em>Kaffee</em></span>
+    </div>
+    <p>Av. Providencia 2546, Providencia · 100% Gluten Free</p>
+    <p class="footer-credit">Demo diseñada por <a href="#" target="_blank" rel="noopener">Matías Medina</a></p>
+  </div>
+</footer>
+
+<!-- Widget flotante: solo Instagram, único canal de contacto confirmado (sin WhatsApp/teléfono/delivery reales) -->
+<div class="floating-widget">
+  <a class="fab fab-instagram" href="https://www.instagram.com/zoliakiekaffee/" target="_blank" rel="noopener" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
